@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- contact form -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <!-- Add Image here -->
+        <div class="image-container">
+          <img
+            src="./images/sample-img.webp"
+            alt="Company Banner"
+            class="image"
+          />
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-container">
+          <!-- Close Button -->
+          <button id="closeModal" class="close-button" aria-label="Close Modal">
+            &times;
+          </button>
+
+          <h2 class="form-title">Register</h2>
+          <form id="registerForm">
+            <!-- Student Name -->
+            <input
+              type="text"
+              name="studentName"
+              placeholder="Student Name"
+              class="input-field"
+              id="student-name"
+            />
+            <span class="error-message" id="student-name-error"></span>
+
+            <!-- Student Mobile -->
+            <input
+              type="number"
+              name="studentMobile"
+              placeholder="Student Mobile"
+              class="input-field"
+              id="student-mobile"
+            />
+            <span class="error-message" id="student-mobile-error"></span>
+
+            <!-- Parent Mobile -->
+            <input
+              type="number"
+              name="parentMobile"
+              placeholder="Parent Mobile"
+              class="input-field"
+              id="parent-mobile"
+            />
+            <span class="error-message" id="parent-mobile-error"></span>
+
+            <!-- Email -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="input-field"
+              id="email"
+            />
+            <span class="error-message" id="email-error"></span>
+
+            <!-- Class -->
+            <select name="class" class="select-field" id="class-select">
+              <option value="" disabled selected>Select Class</option>
+              <option value="7">7th</option>
+              <option value="8">8th</option>
+              <option value="9">9th</option>
+              <option value="10">10th</option>
+              <option value="11">11th</option>
+              <option value="12">12th</option>
+            </select>
+            <span class="error-message" id="class-select-error"></span>
+
+            <!-- Syllabus -->
+            <select name="syllabus" class="select-field" id="syllabus-select">
+              <option value="" disabled selected>Select Syllabus</option>
+              <option value="cbse">CBSE</option>
+              <option value="kerala">Kerala State Board</option>
+            </select>
+            <span class="error-message" id="syllabus-select-error"></span>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button" id="submit-button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- contact form -->
+    <script>
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
