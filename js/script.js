@@ -11,9 +11,9 @@ const classSelect = document.getElementById("class-select");
 const email = document.getElementById("email").value;
 
 // Show modal when window load
-window.onload = function () {
-  modal.style.display = "flex";
-};
+// window.onload = function () {
+//   modal.style.display = "flex";
+// };
 
 // close modal
 closeButton.addEventListener("click", () => {
@@ -88,7 +88,7 @@ contactForm.addEventListener("submit", function (event) {
   // If all validations pass
   if (isValid) {
 
-    const templateParams = {
+    const data = {
       student_mobile: studentMobile,
       parent_mobile: parentMobile,
       email: email,
@@ -96,18 +96,5 @@ contactForm.addEventListener("submit", function (event) {
       syllabus: syllabusSelect,
     };
 
-    // Send email via EmailJS
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Email sent successfully!");
-      },
-      function (error) {
-        console.error("FAILED...", error);
-        alert("Failed to send email. Please try again.");
-      }
-    );
-
-    alert("Form submitted successfully!");
   }
 });
