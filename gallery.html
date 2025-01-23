@@ -3,40 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Student Enquiry</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Gallery - Vertex</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>Student Enquiry for Higher Studies</h1>
-    <p>Explore our events and student activities</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="courses.html">Courses</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <section class="contact-wrapper">
+      <div class="contact-info">
+        <a href="#">
+          <i class="fa-solid fa-phone"></i>
+          <span>8423 4567 89</span>
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-phone"></i>
+          <span>8423 4567 89</span>
+        </a>
+
+        <a href="#">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Vertex@gmail.com</span>
+        </a>
+      </div>
+
+      <div class="social-media">
+        <a href="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="nav-wrapper">
+      <div class="logo-warpper">
+        <div class="vertex-logo">
+          <!-- <img src="vertex.png" alt="vertex-logo" /> -->
+          <h2>VERTEX</h2>
+        </div>
+      </div>
+      <nav class="nav-item">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html"  style="color: white;">Gallery</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </section>
   </header>
 
   <!-- Main Content -->
   <main>
-    <h2>Gallery</h2>
-    <p>Here are some highlights from our recent events and student activities.</p>
+    <section class="gallery-heading">
+      <h1>Gallery</h1>
+    </section>
 
-    <div class="gallery">
-      <img src="event1.jpg" alt="Event 1">
-      <img src="event2.jpg" alt="Event 2">
-      <img src="event3.jpg" alt="Event 3">
-      <img src="event4.jpg" alt="Event 4">
-    </div>
-
-    <a href="contact.html" class="button">Inquire More</a>
+    <section class="achievements-section">
+      <h1>Academic Achievements 2023-24</h1>
+      <h2>PLUS 2 SCHOOL TOPPERS</h2>
+  
+      <div class="achievements-card-container">
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+  
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+  
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+  
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+  
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+  
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+  
+          <div class="achievements-card">
+              <img src="https://placehold.co/350x500" alt="Student Photo">
+          </div>
+      </div>
+  
+      
+  </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Student Enquiry Service. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="footer-container">
+        <!-- First Column: Logo -->
+        <div class="footer-column footer-logo">
+            <img src="https://via.placeholder.com/150x50" alt="Vertex Logo">
+            <p>Vertex Education Group</p>
+        </div>
+
+        <!-- Second Column: Navigation Links -->
+        <div class="footer-column footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Third Column: Contact and Social Media -->
+        <div class="footer-column footer-contact">
+            <h3>Contact Us</h3>
+            <p>123 Education Street, City Name</p>
+            <p>Email: info@vertex.com</p>
+            <p>Phone: +123 456 7890</p>
+            <h3>Follow Us</h3>
+            <div class="social-media-links">
+              <a href="#" class="social-icon">
+                  <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="social-icon">
+                  <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+          </div>            
+        </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vertex Education. All rights reserved.</p>
+  </div>
   </footer>
+
+<!-- modal section -->
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <!-- Add Image here -->
+      <div class="image-container">
+        <img
+          src="./images/sample-img.webp"
+          alt="Company Banner"
+          class="image"
+        />
+      </div>
+
+      <!-- Registration Form -->
+      <div class="form-container">
+        <!-- Close Button -->
+        <button id="closeModal" class="close-button" aria-label="Close Modal">
+          &times;
+        </button>
+        <h2 class="form-title">Register</h2>
+
+        <form id="registerForm">
+          <!-- Student Name -->
+          <input
+            type="text"
+            name="studentName"
+            placeholder="Student Name"
+            class="input-field"
+            id="student-name"
+          />
+          <span class="error-message" id="student-name-error"></span>
+
+          <!-- Student Mobile -->
+          <input
+            type="number"
+            name="studentMobile"
+            placeholder="Student Mobile"
+            class="input-field"
+            id="student-mobile"
+          />
+          <span class="error-message" id="student-mobile-error"></span>
+
+          <!-- Parent Mobile -->
+          <input
+            type="number"
+            name="parentMobile"
+            placeholder="Parent Mobile"
+            class="input-field"
+            id="parent-mobile"
+          />
+          <span class="error-message" id="parent-mobile-error"></span>
+
+          <!-- Email -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="input-field"
+            id="email"
+          />
+          <span class="error-message" id="email-error"></span>
+
+          <!-- Class -->
+          <select name="class" class="select-field" id="class-select">
+            <option value="" disabled selected>Select Class</option>
+            <option value="7">7th</option>
+            <option value="8">8th</option>
+            <option value="9">9th</option>
+            <option value="10">10th</option>
+            <option value="11">11th</option>
+            <option value="12">12th</option>
+          </select>
+          <span class="error-message" id="class-select-error"></span>
+
+          <!-- Syllabus -->
+          <select name="syllabus" class="select-field" id="syllabus-select">
+            <option value="" disabled selected>Select Syllabus</option>
+            <option value="cbse">CBSE</option>
+            <option value="kerala">Kerala State Board</option>
+          </select>
+          <span class="error-message" id="syllabus-select-error"></span>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-button" id="submit-button">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- modal section -->
+
 </body>
 </html>
