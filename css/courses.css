@@ -103,8 +103,6 @@ header {
 }
 
 
-
-
 /* Course section */
 
 .popular-courses {
@@ -253,9 +251,6 @@ header {
 .card-button:hover {
   background-color: var(--button-hover);
 }
-
-
-
 
 /* Footer section */
 
