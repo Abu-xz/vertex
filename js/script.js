@@ -1,5 +1,6 @@
 const modal = document.getElementById("modal");
 const closeButton = document.getElementById("closeModal");
+const cardButton = document.querySelectorAll('.card-button');
 
 const contactForm = document.getElementById("registerForm");
 const studentName = document.getElementById("student-name").value;
@@ -14,6 +15,15 @@ const email = document.getElementById("email").value;
 // window.onload = function () {
 //   modal.style.display = "flex";
 // };
+
+
+
+// Card button event listener
+cardButton.forEach((button) => {
+  button.addEventListener('click', () => {
+    modal.style.display = 'flex'
+  })
+})
 
 // close modal
 closeButton.addEventListener("click", () => {
